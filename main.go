@@ -45,7 +45,7 @@ func addContent(media *Multimedia.WebContent, _type string) {
 		fmt.Print("Frames: ")
 		fmt.Scanln(&frames)
 
-		vid := Multimedia.Audio{Title: title, Format: format, Lenght: lenght}
+		vid := Multimedia.Video{Title: title, Format: format, Frames: frames}
 		media.Data = append(media.Data, &vid)
 
 		break
