@@ -6,7 +6,7 @@ type Multimedia interface {
 	Show()
 }
 
-type DigitalContent struct {
+type WebContent struct {
 	Data []Multimedia
 }
 

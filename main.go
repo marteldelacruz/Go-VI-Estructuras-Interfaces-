@@ -12,7 +12,7 @@ const (
 	VIDEO string = "video"
 )
 
-func addContent(media *Multimedia.DigitalContent, _type string) {
+func addContent(media *Multimedia.WebContent, _type string) {
 	var title, format, channels string
 	var lenght, frames float64
 
@@ -53,17 +53,17 @@ func addContent(media *Multimedia.DigitalContent, _type string) {
 
 }
 
-func showContent(media *Multimedia.DigitalContent) {
+func showContent(media *Multimedia.WebContent) {
 	for _, c := range media.Data {
 		c.Show()
 	}
-	fmt.Print("Presione enter para continuar...")
+	fmt.Print("Press enter to continue...")
 	fmt.Scanln()
 }
 
 func main() {
 	var opt string
-	media := Multimedia.DigitalContent{}
+	media := Multimedia.WebContent{}
 
 	for opt != "0" {
 		fmt.Println("\n------------------------------")
